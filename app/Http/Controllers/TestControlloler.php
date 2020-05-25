@@ -11,6 +11,6 @@ class TestControlloler extends Controller
     	$flight = Flight::where('number', 350)->first();
     	$flight->number = 900;
     	$flight->refresh();
-    	return view('index', compact('flight','freshFlight'));
+    	return view('index', compact('flight'));
     }
 }
