@@ -14,26 +14,32 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
 
         App\Flight::create([
-        	'flight_name'	=>	'caracas'
+        	'flight_name'	=>	'caracas',
+        	'number'		=>  550
         ]);
 
         App\Flight::create([
-        	'flight_name'	=>	'buenos aires'
+        	'flight_name'	=>	'buenos aires',
+        	'number'		=>  250
         ]);
 
         App\Flight::create([
-        	'flight_name'	=>	'lima'
+        	'flight_name'	=>	'lima',
+        	'number'		=>  250
         ]);
         App\Flight::create([
-        	'flight_name'	=>	'bogota'
-        ]);
-
-        App\Flight::create([
-        	'flight_name'	=>	'miami'
+        	'flight_name'	=>	'bogota',
+        	'number'		=>  50
         ]);
 
         App\Flight::create([
-        	'flight_name'	=>	'vene'
+        	'flight_name'	=>	'miami',
+        	'number'		=>  150
+        ]);
+
+        App\Flight::create([
+        	'flight_name'	=>	'vene',
+        	'number'		=>  350
         ]);
     }
 }

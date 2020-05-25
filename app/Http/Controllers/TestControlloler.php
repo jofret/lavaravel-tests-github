@@ -8,8 +8,9 @@ use App\Flight;
 class TestControlloler extends Controller
 {
     public function tests(){
-    	$flight = Flight::orderBy('id','ASC')->first();
-    	$freshFlight = $flight->fresh();
+    	$flight = Flight::where('number', 350)->first();
+    	$flight->number = 900;
+    	$flight->refresh();
     	return view('index', compact('flight','freshFlight'));
     }
 }

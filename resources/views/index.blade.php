@@ -1,2 +1,2 @@
-<h1>{{$flight->flight_name}}</h1>
-<h2>{{$freshFlight ->flight_name}}</h2>
+<h1>method refresh()</h1>
+<h2>{{$flight->id}}).- {{$flight->flight_name}}: {{$flight->number}}</h2>
